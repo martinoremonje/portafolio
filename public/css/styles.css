@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+}
+
+main{
+    padding: 10px;
+}
+
+section{
+    height: 30vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
