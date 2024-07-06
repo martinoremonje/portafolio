@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+        }
+        section {
+            padding-top: 60px; /* Ajusta el padding según la altura de tu navbar */
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">Martin Orellana</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,6 +24,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificados">Certificados</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#proyectos">Proyectos</a>
@@ -44,13 +55,16 @@
         <hr>
         <section id="proyectos" class="row my-5">       
             <div class="col-md-6">
-                <img src="" class="img-fluid" alt="Imagen Proyecto"/> 
+                <img src="public/img/Screenshot_3.png" class="img-fluid" alt="Imagen Proyecto"/> 
+                <img src="public/img/Screenshot_4.png" class="img-fluid ml-5 mt-2" alt="Imagen Proyecto"/> 
             </div>             
-            <div class="col-md-6">
+            <div class="col-md-6 mt-5">
                 <h3>Plataforma Cursos Online</h3>
-                <p>Hola! Me llamo Martin Orellana y soy un desarrollador web fullstack.
-                    Me especializo en el lenguaje de Javascript y utilizo Node y Express
-                    para crear paginas web tanto con FrontEnd como con Backend.
+                <p class="mt-5">Plataforma de Cursos Online Fullstack, creada con Node, Express, Javascript y PgAdmin para 
+                    lograr renderizar directamente desde la Base de Datos de la App elementos tales como: 
+                    Horarios, Cometarios, Nombres e Imagenes.
+
+                    Aplicacion full responsive, apta para todo dispositivo. 
                 </p>            
             </div>
         </section>
@@ -58,36 +72,48 @@
         <section id="super-hero-app" class="row my-5">
             <div class="col-md-6">
                 <h3>Super Hero App</h3>
-                <p>Hola! Me llamo Martin Orellana y soy un desarrollador web fullstack.
-                    Me especializo en el lenguaje de Javascript y utilizo Node y Express
-                    para crear paginas web tanto con FrontEnd como con Backend.
+                <p class="mt-5">App full responsive. Super Hero App es una aplicacion para buscar super heroes desde una API publica,
+                    y a su vez renderizar con charts y contenido en la pagina web de forma dinamica.
+
+                    Pagina creada solo con HTML, CSS y JS. 
+
+                    Puedes acceder a ella desde el siguiente link: <a target="_blank" href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/">Super Hero App</a>
                 </p>
             </div>             
             <div class="col-md-6">
-                <img src="" class="img-fluid" alt="Imagen Super Hero App"/> 
+                <img src="public/img/Screenshot_1.png" class="img-fluid" alt="Imagen Super Hero App"/> 
+                <img src="public/img/Screenshot_2.png" class="img-fluid mt-3" alt="Imagen Super Hero App"/> 
             </div>
         </section>
         <hr>
+        <h2 class="col-12" style="text-align: center;" id="certificados">Certificados</h2>
         <section class="row my-5">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="https://www.udemy.com/certificate/UC-a940e831-9611-4483-a2a0-40c4ba5e326d/" target="_blank">Universidad Desarrollo Web - FrontEnd Web Developer</a></li>
+                    <li><a href="https://www.udemy.com/certificate/UC-d289abb7-989d-4720-8ad4-9f383f3cde3e/" target="_blank">Git, GitHub, GitLab y GitHub Copilot: Uso de repositorios</a></li>
+                    <li><a href="#" target="_blank">Fullstack Javascript - Desafio LATAM</a></li>
+                </ul>
+            </div>            
+            <div class="col-md-6">
+                <h4>Nivel Ingles</h4>
+                <p>C2 Proficient</p>
+                <a href="https://cert.efset.org/oi5sET" target="_blank">EFSET TEST</a>
+            </div>
+        </section>
+        <hr>
+        <section class="row my-5" id="contacto">
             <div class="col-md-6 mt-5">
-                <h1>Contactame </h1>
+                <h1>Contáctame via email</h1>
             </div>             
             <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                <div class="col-md-6">
+                    <div class="mt-5 ml-5"> 
+                        <a href="mailto:m.monjeorellana@gmail.com?subject=Contacto%20desde%20el%20portfolio&body=Hola,%20me%20gustaría%20ponerme%20en%20contacto%20contigo..." class="btn btn-primary">Enviar correo</a>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                </div>
             </div>
-            
         </section>
-
     </main>
     <hr>
     <footer class="text-center my-5">
@@ -99,3 +125,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
